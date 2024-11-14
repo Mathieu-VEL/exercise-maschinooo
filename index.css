@@ -1,0 +1,199 @@
+
+
+
+:root {
+  --darkgray: #333;
+  --darkgray2: #4d4d4d;
+  --fond2: #14b789;
+  --white: white;
+  --fontPrincipale: "DM Sans";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#bandeausolde {
+  display: flex;
+  background-color: var(--darkgray);
+  padding: 50px 0px;
+  justify-content: center;
+}
+
+#container #bandeausolde h1 {
+  color: var(--white);
+  font-family: "Oswald", sans-serif;
+}
+
+#container #block-maschino {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#container #block-maschino h1 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+#container #CE {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-style: italic;
+  font-size: 10px;
+}
+
+#container #list {
+  border-top: 1px solid var(--darkgray);
+  border-bottom: 1px solid var(--darkgray);
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 30%;
+  margin-bottom: 3%;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: bolder;
+}
+
+#container #block-img {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+#container #block-img img {
+  justify-content: space-around;
+  padding: 2%;
+  height: 300px;
+  width: 400px;
+}
+
+#container #block-img h1 {
+  justify-content: space-around;
+  padding: 2%;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+}
+
+#container #block-img h3 {
+  justify-content: space-around;
+  padding: 2%;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+
+#container #num-page {
+ display: flex;
+ justify-content: space-around;
+ padding: 1% 40%;
+ color: white;
+ padding-top: 5%;
+ padding-bottom: 5%;
+}
+
+#container #num-page ul {
+    display: flex;
+    border: solid var(--darkgray2);
+    background-color: var(--darkgray2);
+    width: 17%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#container #num-page .suite {
+    border: solid var(--darkgray2);
+    background-color: var(--darkgray2);
+    width: 30%;
+    text-align: center;
+    display: flex;
+}
+
+
+#bandeaufooter {
+    display: flex;
+    background-color: var(--darkgray);
+    padding: 50px 0px;
+    justify-content: center;
+  }
+
+
+#container #bandeaufooter h1 {
+    color: var(--white);
+  font-family: "Oswald", sans-serif;
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------hover------------ */
+
+
+
+
+#container #list :hover{
+    color: rgb(231, 13, 13);
+    text-shadow: 0 0 10px red,
+                 0 0 20px red,
+                 0 0 40px red,
+                 0 0 80px red,
+                 0 0 120px red,
+                 0 0 160px red;
+}
+
+
+
+#container #num-page :hover{
+    color: rgb(231, 13, 13);
+    text-shadow: 0 0 10px red,
+                 0 0 20px red,
+                 0 0 40px red,
+                 0 0 80px red,
+                 0 0 120px red,
+                 0 0 160px red;
+}
+
+
+
+
+
+#container #list ul {
+    transition: 0.3s;
+}
+
+
+
+
+#container #num-page ul {
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
