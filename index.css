@@ -104,15 +104,16 @@
 
 #container #num-page ul {
     display: flex;
-    border: solid var(--darkgray2);
+    /* border: solid var(--darkgray2); */
     background-color: var(--darkgray2);
     width: 17%;
+    padding: 2% 0;
     text-align: center;
     justify-content: space-around;
 }
 
 #container #num-page .suite {
-    border: solid var(--darkgray2);
+    /* border: solid var(--darkgray2); */
     background-color: var(--darkgray2);
     width: 30%;
     text-align: center;
@@ -166,6 +167,7 @@
 
 
 #container #num-page :hover{
+    /* background-color: rgb(255, 255, 0); */
     color: rgb(231, 13, 13);
     text-shadow: 0 0 10px red,
                  0 0 20px red,
