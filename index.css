@@ -1,6 +1,3 @@
-
-
-
 :root {
   --darkgray: #333;
   --darkgray2: #4d4d4d;
@@ -39,9 +36,9 @@
 }
 
 #container #block-maschino h1 {
-    font-family: "Herr Von Muellerhoff", cursive;
-    font-size: 70px;
-    font-weight: 400;
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 70px;
+  font-weight: 400;
 }
 
 #container #CE {
@@ -62,19 +59,32 @@
   margin-bottom: 3%;
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: bolder;
+  list-style: none;
+}
+
+#container #list a {
+  color: black;
+  text-decoration: none;
+}
+
+#container #list #burger i {
+  display: none;
 }
 
 #container #block-img {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#container #block-img .article {
+  width: 30%;
 }
 
 #container #block-img img {
   justify-content: space-around;
   padding: 2%;
-  height: 300px;
-  width: 400px;
+  width: 100%;
 }
 
 #container #block-img h1 {
@@ -92,105 +102,216 @@
   font-size: 13px;
 }
 
-
 #container #num-page {
- display: flex;
- justify-content: space-around;
- padding: 1% 40%;
- color: white;
- padding-top: 5%;
- padding-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 40%;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#container #num-page ul {
-    display: flex;
-    /* border: solid var(--darkgray2); */
-    background-color: var(--darkgray2);
-    width: 17%;
-    padding: 2% 0;
-    text-align: center;
-    justify-content: space-around;
+#container #num-page li {
+  display: flex;
+  /* border: solid var(--darkgray2); */
+  background-color: var(--darkgray2);
+  width: 17%;
+  padding: 2% 0;
+  text-align: center;
+  justify-content: space-around;
 }
 
 #container #num-page .suite {
-    /* border: solid var(--darkgray2); */
-    background-color: var(--darkgray2);
-    width: 30%;
-    text-align: center;
-    display: flex;
+  /* border: solid var(--darkgray2); */
+  background-color: var(--darkgray2);
+  width: 30%;
+  text-align: center;
+  display: flex;
 }
 
-
 #bandeaufooter {
-    display: flex;
-    background-color: var(--darkgray);
-    padding: 50px 0px;
-    justify-content: center;
-  }
-
+  display: flex;
+  background-color: var(--darkgray);
+  padding: 50px 0px;
+  justify-content: center;
+}
 
 #container #bandeaufooter h1 {
-    color: var(--white);
+  color: var(--white);
   font-family: "Oswald", sans-serif;
   font-size: small;
 }
 
+#container #map {
+  margin: 0 auto;
+  width: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding-bottom: 2%;
+}
 
+#container #map iframe {
+  width: 100%;
+  /* display: flex;
+justify-content: center;
+text-align: center; */
+}
 
+#container #contact {
+  display: flex;
+}
 
+#container #info {
+  /* margin: 0 auto; */
+  text-align: center;
+  width: 48%;
+}
 
-
-
-
-
-
-
-
-
-
+#container #table {
+  /* display: flex; */
+  /* margin: 0 auto; */
+  text-align: center;
+  justify-content: center;
+  width: 48%;
+}
 
 /* -------------hover------------ */
 
+#container #list :hover {
+  color: rgb(231, 13, 13);
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red,
+    0 0 120px red, 0 0 160px red;
+}
 
+#container #num-page :hover {
+  /* background-color: rgb(255, 255, 0); */
+  color: rgb(231, 13, 13);
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red,
+    0 0 120px red, 0 0 160px red;
+}
 
+#container #list li {
+  transition: 0.3s;
+}
 
-#container #list :hover{
-    color: rgb(231, 13, 13);
-    text-shadow: 0 0 10px red,
-                 0 0 20px red,
-                 0 0 40px red,
-                 0 0 80px red,
-                 0 0 120px red,
-                 0 0 160px red;
+#container #list #burger i {
+  transition: 0.3s;
+}
+
+#container #num-page li {
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 860px) {
+  #container #bandeausolde h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #container #block-maschino h1 {
+    font-size: 30px;
+  }
+  #container #CE {
+    font-size: 5px;
+  }
+  #container #list li {
+    display: none;
+  }
+
+  #container #block-img .article {
+    width: 40%;
+  }
+  #container #block-img h1 {
+    text-align: center;
+  }
+  #container #block-img h3 {
+    text-align: center;
+  }
+  #container #list #burger i {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #container #block-img h1 {
+    text-align: center;
+    font-size: small;
+  }
+  #container #block-img h3 {
+    text-align: center;
+    font-size: small;
+  }
+  #container #num-page li {
+    /* text-align: center; */
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 1%;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #container #block-img h1 {
+    text-align: center;
+    font-size: 10px;
+  }
+  #container #block-img h3 {
+    text-align: center;
+    font-size: 10px;
+  }
+  #container #num-page li {
+    /* text-align: center; */
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 20%;
+  }
+  #container #num-page .suite {
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #container #block-img .article {
+    width: 60%;
+  }
+}
+
+.nivo-caption {
+  background-color: transparent;
+  bottom: 45%;
+  left: 25%;
+  font-size: 3rem;
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nivo-caption h2{
+  background-color: rgba(0, 0, 255, 0.363);
+  font-size: 20px;
+}
+
+.nivo-caption #htmlcaption h3{
+  background-color: rgba(0, 0, 255, 0.363);
+  font-size: 200px;
+}
+
+.nivo-caption h4{
+  background-color: rgba(0, 0, 255, 0.363);
+  font-size: 20px;
+}
+
+#container #slider {
+  border-radius: 3%;
+  margin: 0 auto;
+  width: 95%;
 }
 
 
 
-#container #num-page :hover{
-    /* background-color: rgb(255, 255, 0); */
-    color: rgb(231, 13, 13);
-    text-shadow: 0 0 10px red,
-                 0 0 20px red,
-                 0 0 40px red,
-                 0 0 80px red,
-                 0 0 120px red,
-                 0 0 160px red;
-}
-
-
-
-
-
-#container #list ul {
-    transition: 0.3s;
-}
-
-
-
-
-#container #num-page ul {
-    transition: 0.3s;
-}
 
 
 
@@ -199,3 +320,43 @@
 
 
 
+
+
+
+
+
+
+/* .nivo-caption{
+  background-color: rgba(128, 128, 128, 0.58);
+  font-size:3rem;
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .nivo-caption h2{
+  font-size:3rem;
+  padding-top:8%;
+  padding-left:6%;
+  }
+  .nivo-caption h3{
+  font-size:2rem;
+  margin-bottom:8%;
+  padding-left:6%;
+  }
+  .nivo-caption .iconeLien{
+  width:85%;
+  display: flex;
+  justify-content: center;
+  padding-left:6%;
+  }
+  .nivo-caption i{
+  margin-right:4%;
+  }
+  .nivo-caption .bouton{
+  font-size:1.5rem;
+  padding:5px 24px;
+  border-radius: 20px;
+  margin-left:4%;
+  } */
