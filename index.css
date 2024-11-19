@@ -144,7 +144,6 @@
 
 #container #map-video {
   display: flex;
-  flex: ;
   justify-content: space-around;
 }
 
@@ -157,12 +156,12 @@
   padding-bottom: 2%;
 }
 
-#container #map iframe {
-  /* width: 100%; */
-  /* display: flex;
+/* #container #map iframe {
+  width: 100%;
+  display: flex;
 justify-content: center;
-text-align: center; */
-}
+text-align: center;
+} */
 
 #container #video1 {
   display: flex;
