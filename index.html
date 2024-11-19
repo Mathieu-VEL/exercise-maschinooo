@@ -28,13 +28,18 @@
 
   <!-- -----------nivoslider------------>
 
-  <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="./themes/default/default.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- -----------nivoslider------------>
+
+  <!------------- lightbox  ------------>
+
+  <link href="./lightbox2/lightbox2-dev/lightbox2-dev/dist/css/lightbox.css" rel="stylesheet" />
 
 
-
-
-
+  <!------------- lightbox  ------------>
 
 
 
@@ -65,44 +70,105 @@
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
 
+
+
+
+
+
+    <!-- nivoslider -->
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider">
+        <img src="images/slider1.jpg" alt="photo1" title="#htmlcaption1" />
+        <img src="images/slider2.jpg" alt="photo2" title="#htmlcaption2" />
+        <img src="images/slider3.jpg" alt="photo3" title="#htmlcaption3" />
+      </div>
+    </div>
+    <!-- nivoslider -->
+
+
+    <div id="htmlcaption1" class="nivo-html-caption">
+      <h2>1 is an example of caption</h2>
+      <h3>with <a href="#">a link</a>.</h3>
+      <div class="iconeLien">
+        <i class="fa-solid fa-hat-cowboy"></i>
+        <button class="bouton">Plus d'infos</button>
+      </div>
+    </div>
+    <div id="htmlcaption2" class="nivo-html-caption">
+      <h2>2 is an example of caption</h2>
+      <h3>with <a href="#">a link</a>.</h3>
+      <div class="iconeLien">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <button class="bouton">Plus d'infos</button>
+      </div>
+    </div>
+    <div id="htmlcaption3" class="nivo-html-caption">
+      <h2>3 is an example of caption</h2>
+      <h3>with <a href="#">a link</a>.</h3>
+      <div class="iconeLien">
+        <i class="fa-solid fa-hat-wizard"></i>
+        <button class="bouton">Plus d'infos</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section id="block-img">
       <article class="article">
-        <img src="./images/01.jpg" alt="article1" />
+        <a href="./images/01.jpg" data-lightbox="roadtrip"><img src="./images/01.jpg" alt="article1" /></a>
         <h1>
           SUNSET BEACH
           <h3>été / femme / jaune</h3>
         </h1>
       </article>
       <article class="article">
-        <img src="./images/02.jpg" alt="article2" />
+        <a href="./images/02.jpg" data-lightbox="roadtrip"><img src="./images/02.jpg" alt="article2" /></a>
         <h1>
           EARL OF MORELAND
           <h3>chapeau / femme / jaune</h3>
         </h1>
       </article>
       <article class="article">
-        <img src="./images/03.jpg" alt="article3" />
+        <a href="./images/03.jpg" data-lightbox="roadtrip"><img src="./images/03.jpg" alt="article3" /></a>
         <h1>
           ELIZA AND HOHN
           <h3>été / femme / jaune</h3>
         </h1>
       </article>
       <article class="article">
-        <img src="./images/04.jpg" alt="article4" />
+        <a href="./images/04.jpg" data-lightbox="roadtrip"><img src="./images/04.jpg" alt="article4" /></a>
         <h1>
           HOT AFTERNOON
           <h3>wtf / femme / pute</h3>
         </h1>
       </article>
       <article class="article">
-        <img src="./images/05.jpg" alt="article5" />
+        <a href="./images/05.jpg" data-lightbox="roadtrip"><img src="./images/05.jpg" alt="article5" /></a>
         <h1>
           LONG WALKS
           <h3>chapeau / femme / jaune</h3>
         </h1>
       </article>
       <article class="article">
-        <img src="./images/06.jpg" alt="article6" />
+        <a href="./images/06.jpg" data-lightbox="roadtrip"><img src="./images/06.jpg" alt="article6" /></a>
         <h1>TWILIGHT
           <h3>chapeau / femme / été</h3>
         </h1>
@@ -115,6 +181,27 @@
       <li class="suite">suite</li>
     </ul>
 
+
+
+    <div id="map-video">
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7601.186787691726!2d-2.7639591084302477!3d47.65673254724613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101e84c37de291%3A0xb9f358307b233d13!2sVannes!5e0!3m2!1sfr!2sfr!4v1731666688017!5m2!1sfr!2sfr"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="video1">
+        <iframe src="https://www.youtube.com/embed/fxCJEivw2pE?si=hDbtrk779dGjqMeF" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+
+
+
+
     <footer>
       <div id="bandeaufooter">
         <h1>copyright &copy;</h1>
@@ -124,6 +211,23 @@
   </div>
 
 
+
+
+
+  <!-- script  -->
+  <!-- lightbox2 -->
+
+
+  <!-- slider -->
+  <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+  <script type="text/javascript">
+    $(window).load(function () {
+      $('#slider').nivoSlider();
+    });
+  </script>
+  <script src="./scripts/lightbox.js"></script>
+  <!-- script -->
 </body>
 
 </html>
